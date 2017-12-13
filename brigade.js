@@ -1,7 +1,5 @@
 const { events } = require('brigadier');
 
-console.log('Hello before');
-
-events.on('exec', (brigadeEvent, project) => {
+events.on('push', (brigadeEvent, project) => {
   console.log('Hello world!');
 });
